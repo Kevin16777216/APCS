@@ -1,0 +1,8 @@
+public class HelloWorldTenTimes{
+    public static void main(String[] args){
+	for(int i:int[10]){
+	    println("hello, world");
+	}
+    }
+
+}
