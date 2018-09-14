@@ -1,0 +1,13 @@
+8 kinds of primitive datatypes:
+1.char
+2.boolean
+3.byte
+4.short
+5.int
+6.float
+7.double
+8.long
+
+___________________________________
+
+It's a number circle, not a number line (overflow)
