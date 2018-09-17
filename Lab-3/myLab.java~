@@ -1,0 +1,11 @@
+public class myLab{
+    public static void main(String[] args){
+	//Part 1
+	System.out.println(1.0 / 0.0);
+	System.out.println(Math.sqrt(-1.0));
+	System.out.println(1.03 - 0.42);
+	
+    }
+
+
+}
