@@ -1,0 +1,19 @@
+1. Declare an int variable a with the value 2147483647 (or you can 
+   use Integer.MAX_VALUE). What do each of the following print?
+
+    a. System.out.println(a);->2147483647
+    b. System.out.println(a + 1);->-2147483648
+    c. System.out.println(2 - a);->-2147483645
+    d. System.out.println(-2 - a);->2147483647
+    e. System.out.println(2 * a);->-2
+    f. System.out.println(4 * a);->-4
+    g. System.out.println(Math.abs(Integer.MIN_VALUE));->-2147483648
+
+
+
+
+2. You can use IntDemo.java to evaluate the following values of x.
+
+    a. int x = 011;->9
+    b. int x = 0x11;->17
+    c  int x = 010 + 0x20;->40

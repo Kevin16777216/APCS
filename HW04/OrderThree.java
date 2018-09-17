@@ -12,8 +12,6 @@ public class OrderThree{
 	b = sc.nextInt();
 	System.out.print("enter an integer:");
 	c = sc.nextInt();
-	
-
 	z = Math.max(a,Math.max(b,c));
 	x = Math.min(a,Math.min(b,c));
 	y = a + b + c - x - z;
