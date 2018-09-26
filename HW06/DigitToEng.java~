@@ -1,0 +1,22 @@
+public class DigitToEng{
+    public static void main(String[] args){
+	Scanner sc = new Scanner(System.in);
+	int input = 12;
+	String ans = "";
+	while(!(input >= 0 && input < 10)){
+	    System.out.print("Give me a single digit:");
+	    input = sc.nextInt();
+	    if(!(input >= 0 && input < 10)){
+		System.out.println("that is not an integer");
+	    }
+	}
+	String[] res = {"h","i"}
+	switch(input){
+	case 0:
+	    ans = "hi";
+	    break;
+	default:
+	    ans =  "error";
+	}
+    }
+}

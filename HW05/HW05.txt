@@ -1,0 +1,39 @@
+b
+197
+e
+35 : #
+165 : ¥
+====================================================================
+Exercises
+====================================================================
+
+1. What do each of the following print?
+
+   a. System.out.println('b'); ->
+
+   b. System.out.println('b' + 'c'); -> 197
+
+   c. System.out.println((char)('a' + 4)); -> e
+
+
+2. Given the following:
+
+    char a = 35;
+
+   What does the following print out?
+
+   System.out.println((int) a + " : " + a); -> 35 : ¥
+
+
+
+3. Assigning a char the escape sequence of the form \ddd
+   assigns the character whose ASCII value is the octal  
+   number ddd. 
+
+   Given :
+
+   char b = '\245';
+
+  What does the following print out?
+
+   System.out.println((int) b + " : " + b); -> 165 : ¥
