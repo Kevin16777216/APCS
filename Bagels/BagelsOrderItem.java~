@@ -1,0 +1,16 @@
+public class BagelsOrderItem implements OrderItem{
+    private double price;
+    private int quantity;
+    public BagelsOrderItem(double price, int quantity){
+	this.price = price;
+	this.quantity = quantity;
+    }
+    @Override
+    public int getQuantity(){
+	return quantity;
+    }
+    @Override
+    public int getPrice(){
+	return price;
+    }
+}

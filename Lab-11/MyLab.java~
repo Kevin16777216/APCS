@@ -1,0 +1,23 @@
+public class MyLab{
+    public static void main(String [] args){
+	System.out.println(endsWith("StuyPulse","Pulse"));
+	System.out.println(indexOf("StuyPulse","uyP",1)); 
+    }
+    public static boolean endsWith(String in, String substr){
+	return in.substring(in.length()-substr.length()).equals(substr);
+    }
+    public static int indexOf(String in, String str, int ind){
+	int j = str.length();
+	int count = 0;
+	int i = 0;
+	while(i <= in.length()-j || count == ind){
+	    if(in.substring(i,i + j).equals(str)){
+		count++;
+	    }
+	    i++;
+	}
+	return (count == 0) ? -1 : i ; 
+    }
+
+
+}

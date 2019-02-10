@@ -1,0 +1,60 @@
+public class TokenScanner{
+    
+    // private instance variables
+    private String input;      // String to scan
+    private int cp;            // current position
+    private boolean ignoreWhitespaceFlag;
+
+
+    // default constructor
+    public TokenScanner(){
+	this("");
+    }
+    
+    // constructor
+    public TokenScanner(String input){
+        setInput(input);
+    }
+
+
+    // resets the input and cp
+    public void setInput(String input){
+	this.input = input;
+	cp = 0;
+    }
+
+    // returns true when input contains unprocessed tokens
+    public boolean hasMoreTokens(){
+	return cp > input.length();
+    }
+
+     
+     public void ignoreWhitespace(){
+     	   ignoreWhitespaceFlag = true;
+     }
+
+    // Skips over any whitespace characters before the next token.
+    private void skipWhitespace(){
+	while(Character.isWhitespace(input.charAt(cp)))cp++;
+    }
+
+    // Assumes string does not contain a floating point number.
+    // Returns the nextToken() if there is no next token then return
+    // an empty string.
+    public String nextToken(){
+        if(!hasMoreTokens())return "";
+	String out = "";
+	int type = 0;
+	while(hasMoreTokens()){
+	    skipWhiteSpace();
+	    char read = input.charAt(cp)
+		if(Character.isDigit(read) && type > 1)return out;else{ out += read;type = 1;}
+	    
+		if(ignoreWhitespaceFlag){
+		    cp++;
+		    return out;
+	        }else{ out+= input.charAt(cp);}
+	    cp++;
+	}
+    }
+}

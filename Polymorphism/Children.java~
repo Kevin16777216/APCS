@@ -1,0 +1,7 @@
+public class Children{
+    public static void main(String[] args){
+	int i = 1;//Doesn't matter what gender
+	while(Math.random() > 0.5) i++;
+	System.out.println(i);
+    }
+}

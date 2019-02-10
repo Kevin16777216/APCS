@@ -1,0 +1,11 @@
+import java.util.ArrayList;
+
+//Check occurences:
+	int output = 0;
+	    for(String e: list){
+	    	       if(e.equals(x)) output++;
+	    }
+	return output;
+
+//reverse:
+	for(int i = 0; i < list.length/2; i++)list.set(i,list.set(list.length-i-1,list.get(i)));

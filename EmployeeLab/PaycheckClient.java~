@@ -1,0 +1,13 @@
+import java.util.List;
+public class PaycheckClient{
+    public static void Main(String[] args){
+	List<Employee> Employees = new ArrayList<Employee>();
+	Employees.add(new CommissionedEmployee("A",30,2,10));
+        Employees.add(new SalaryEmployee("B",15));
+	Employees.add(new CommissionedEmployee("C",30,9,10));
+	for(Employee i: Employees){
+	    System.out.println(i);
+	    System.out.println("Paycheck:" i.payCheck());
+	}
+    }
+}

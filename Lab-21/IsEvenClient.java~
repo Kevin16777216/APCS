@@ -1,0 +1,12 @@
+public class IsEvenClient{
+    
+   // Post: Returns an IntegerList containing all the elements that satisfy
+   //       the PredicateFunction. NO SIDE EFFECTS ARE PRODUCED.
+   public IntegerList  filter(PredicateFunction f, IntegerList list){
+       IntegerList out = new IntegerList();
+       for(int i: list){
+	   out.add(f.evaluate(i));
+       }
+       return out;
+   }
+}

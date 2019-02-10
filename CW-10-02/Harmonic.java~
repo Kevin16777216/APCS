@@ -1,0 +1,9 @@
+public class Harmonic{
+    public static void main(String[] args){
+	double res = 0;
+	int input = Integer.parseInt(args[0]);
+	for(int i = 1; i < input; res += 1/i++){}
+	System.out.println(res);
+	System.out.println(Math.ln(input)+0.57721);
+    }
+}

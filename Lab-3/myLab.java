@@ -30,7 +30,9 @@ public class MyLab{
     public void run(){
 	Scanner sc = new Scanner(System.in);
 	System.out.print("Give me a number:");
-	int x = Double.parseDouble(sc.nextline());
+	String res = sc.nextLine();
+	double x = Double.parseDouble(res);
+	System.out.println(Math.sin(2*x)+Math.sin(3*x));
     }
 
 

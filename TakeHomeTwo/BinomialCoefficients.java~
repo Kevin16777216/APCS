@@ -1,0 +1,5 @@
+public class BinomialCoefficients{
+    public static void main(String[] args){
+	in m = Integer.parseInt(args[0]);
+    }
+}

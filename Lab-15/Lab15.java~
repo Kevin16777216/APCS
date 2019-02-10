@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class Lab15{
+    public static void main(String[] args){
+	Scanner sc = new Scanner(System.in);
+	System.out.print("Enter the number if character positions to shift:");
+	int k = sc.nextInt();
+	sc.nextLine();
+	System.out.print("Enter a message:");
+	System.out.println(encodeCaesarChipher(sc.nextLine(),k));
+	//Part 2
+	String key = "";
+	while(key.length() != 26){
+	    System.out.print("Enter a 26-letter key :");
+	    key = sc.nextLine();
+	}
+	System.out.print("Enter a message :");
+	System.out.println(swapString(sc.nextLine(),key));
+	
+    }
+    public static String swapString(String str, String key){
+	String res = "";
+	for(int j = 0; j < str.length(); j++){
+	    char m = key.charAt((int) (str.charAt(j)-((Character.isUpperCase(str.charAt(j)))? 65: 97)));
+	    res += (Character.isUpperCase(str.charAt(j)))? (char) (m-32): m; 
+	}
+	return res;
+    }
+    public static String encodeCaesarChipher(String str, int shift){
+	String ret = "";
+	String alphabet = "abcdefghijklmnopqrstuvwxyz";
+	for(char i:str.toCharArray()){
+	    if(Character.isLetter(i)){
+		int val = ((shift > 0)? shift : shift * -1);
+		char add = alphabet.charAt((alphabet.indexOf(Character.toLowerCase(i))+val)% 26);
+		ret += (Character.isUpperCase(i))? Character.toUpperCase(add):add;
+	    }else{
+		ret+=i;
+	    }
+	}
+	return ret;
+    }
+    
+}

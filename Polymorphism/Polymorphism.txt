@@ -1,0 +1,29 @@
+1. 7/20 -> 0.35
+2. No, you have to cast c as a coin
+3.Yes
+4.Yes
+5.
+a)12
+b)8
+6
+a)3
+b)N/A
+7
+a)3
+b)6
+c)19
+8
+a)3
+b)-1
+c)N/A
+9
+a)3
+b)-1
+C)N/A
+10
+a)2
+b)2
+c)N/A
+d)10
+e)Howdy
+f)Howdy

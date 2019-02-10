@@ -1,0 +1,14 @@
+public class Factors{
+    public static void main(String[] args){
+	long n = Long.parseLong(args[0]);
+	while(n%2 == 0){
+	    System.out.print("2 ");
+	    n /= 2;
+	}
+	for(long i = 3; i <= n; i += 2)
+	    while(n % i == 0){
+		System.out.print(i + " ");
+		n /= i;
+	    }
+    }
+}

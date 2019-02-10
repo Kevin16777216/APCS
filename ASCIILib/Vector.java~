@@ -1,0 +1,11 @@
+public class Vector{
+    double[] coords;
+    double magnitude;
+    public Vector(double x,double y){
+	coords = {x,y};
+    }
+    public Vector(double[] coords){
+	this.coords = coords;
+    }
+    public Vector UP()
+}

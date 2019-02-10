@@ -1,0 +1,9 @@
+public class BakersDozen extends BagelsOrderItem{
+    public BakersDozen(double price){
+	super(13,price);
+    }
+    @Override
+    public double getCost(){
+	return price * 12;
+    }
+}

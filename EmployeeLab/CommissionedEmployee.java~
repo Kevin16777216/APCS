@@ -1,0 +1,21 @@
+public class CommisssionedEmployee extends Employee{
+    private double baseSalary,commissionRate,salesVolume;
+    public CommissionedEmployee(String name, double base, double rate, double volume){
+	super(name);
+	baseSalary = base;
+	commissionRate = rate;
+	salesVolume  = voulme;
+    }
+    public void setBaseSalary(double base){
+	baseSalary = base;
+    }
+    @Override
+    public double getBaseSalary(){
+	return baseSalary;
+    }
+    @Override
+    public String toString(){
+	return super.toString() + "In base Salary: "+baseSalary;
+    }
+    
+}

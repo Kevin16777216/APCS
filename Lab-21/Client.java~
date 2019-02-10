@@ -1,0 +1,11 @@
+public class Client{
+    public static void
+	main(String[] args){
+	SkiJumper bob = new SkiJumper("first","last");
+	System.out.println(bob);
+	bob.fly();
+	System.out.println(bob);
+	bob.train(6.7);
+	System.out.println(bob);
+    }
+}

@@ -1,0 +1,23 @@
+public class myLab{
+    public static void main(String[] args){
+	for(int i = 1; i < 29; i++){
+	    if (isPerfect(i)) System.out.println(i);
+	}
+    }
+    public static boolean isPerfect(int k){
+	int p = getSum(k);
+	return p == k;
+    }
+    public static int getSum(int input){
+	int n = input;
+	int sum = 0;
+	int inc = 2;
+	for(int i = input - 1 ; i > 0; i--){
+	    if(n % i == 0){
+	        sum += i;
+	    }
+	}
+	return sum;
+
+    }
+}

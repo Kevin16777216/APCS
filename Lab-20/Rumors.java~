@@ -1,0 +1,24 @@
+
+//By Kevin Cai && Eric Chen
+public class Rumors{
+    static boolean[] set = new boolean[56];
+    static boolean heardTwice = false;
+    static int talks = 0;
+    public static void main(String[] args){
+	add(-1,0);
+	System.out.println(talks);
+    }
+    public static void add(int P,int C){
+	if(set[C]){
+	    talks++;
+	    heardTwice = true;
+	    return;
+	}
+	set[C] = true;
+	int i = 0;
+	while(i == P|| i == C){
+	    i = (int) Math.random()*set.length;
+	}
+	add(C,i);
+    }
+}

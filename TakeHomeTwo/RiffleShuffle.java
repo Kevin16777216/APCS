@@ -1,0 +1,24 @@
+public class RiffleShuffle{
+    static int[] Pile = new int[52];
+    public static void main(String[] args){
+        shuffle();
+	for(int i: Pile)System.out.println(i);
+	
+    }
+    public static void shuffle(){
+	int L,R;
+	R = 0;
+	for(int i =0; i < 52;i++) R+= (Math.random()* 2);
+	L = 52 - R;
+	int i = 0;
+	while(L+R != 0){
+	    if(Math.random() > L / (L + R)){
+		Pile[i] = L--;
+	    }else{
+		Pile[i] = R--;
+	    }
+	    i++;
+	}
+    
+    }
+}

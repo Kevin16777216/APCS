@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class MaxList{
+    final int SENTINEL = 0;
+    public static void main(String[] args){
+	Scanner sc = new Scanner(System.in);
+	int largest = INTEGER.MIN_VALUE;
+	while(true){
+	    System.out.print("Give me a Int:");
+	    if(input.nextInt() == SENTINEL) break;
+	    if(input.nextInt() > largest) largest =  input.nextInt();
+	}
+	System.out.println("Largest:" largest);
+    }
+
+}

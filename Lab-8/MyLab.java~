@@ -1,0 +1,21 @@
+public class MyLab{
+    public static void main(String[] args){
+	System.out.println(getPI());
+	System.out.println(Math.PI);
+    }
+    public static double getPI(){
+	double res = 0.5;
+	for(double i = 3, current = 0.5; true ; i+=2){
+	    double add =  0.5* current*Math.pow(0.5,i-1)*(1/i);
+	    res +=  add;
+	    if(add == 0) break;
+	    System.out.println((i-2)+"/"+(i-1) +"  * 1/" +i);
+	    current *= (i-2)/(i-1);
+	}
+	return res*6;
+    }
+    public static double exp(int x){
+	return 0.0;
+    }
+    
+}

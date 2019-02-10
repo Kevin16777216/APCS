@@ -1,0 +1,14 @@
+public class GcdDemo{
+    public static void main(String[] args){
+	getGcd(Integer.parseInt(args[0]),Integer.parseInt(args[1]));
+    }
+    public static int getGcd(int x,int y){
+	while(x %y != 0){
+	    if (x%y != 0){
+		x = y;
+		y = r;
+	    }
+	}
+	return y;
+    }
+}

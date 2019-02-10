@@ -1,0 +1,26 @@
+public class Lab14{
+    public static void main(String[] args){
+	System.out.println(Oboenglobish("english"));
+    }
+    public static String Oboenglobish(String str){
+	String res = "";
+	String vowels = "aeiou";
+	for(int i = 0; i < str.length(); i++){
+	    char cur = str.charAt(i);
+	    if(vowels.contains(cur)){
+		if(i != 0){
+		    if(!vowels.contains(str.charAt(i-1)){
+			    if(i == str.length() - 1 && cur == 'e')){
+			        continue;
+			    }
+			res += "ob" + cur;
+		    }
+		}else{
+		    res += "ob" + cur;
+		}
+	    }
+	}
+	
+	
+    }
+}

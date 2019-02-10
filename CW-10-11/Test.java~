@@ -1,0 +1,11 @@
+public class Test{
+    public static void main(String[] args){
+	int d = 7;
+	System.out.println(d);
+	addTwo(d);
+	System.out.println(d);
+    }
+    public void addTwo(int j){
+	j += 2;
+    }
+}
